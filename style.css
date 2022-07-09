@@ -16,7 +16,7 @@ body{
     grid-template-columns: 80px 400px 1fr 250px;
     grid-template-rows: 80px 1fr;
 }
-nav, menu, section, main, aside{
+nav,  section, main, aside{
     padding-top: 24px;
 }
 
@@ -30,12 +30,53 @@ menu{
     background-color: #7048e8;
     color: #fff;
     grid-column: 2 / -1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 40px;
+
 }
 section{
     background-color: #e9ece7;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: scroll;
 }
 
 aside{
     background-color: #e9ece7;
 }
 
+
+button{
+    font-size: 16px;
+    background-color:#5f3dc4 ;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+button:last-child{
+    background-color: rgb(233, 69, 96);
+    margin-left: auto;
+    
+}
+
+.email{
+    background-color: #adb5bd;
+    height: 96px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+
+}
